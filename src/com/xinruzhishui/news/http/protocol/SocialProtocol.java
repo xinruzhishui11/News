@@ -20,9 +20,12 @@ public class SocialProtocol extends BaseProtocol<ArrayList<News>>{
 	public ArrayList<News> parseJson(String result) {
 		Gson gson = new Gson();
 		JsonResult jsonResult = gson.fromJson(result, JsonResult.class);
-		Newslist = jsonResult.result.data;
+		if(jsonResult != null){
+			Newslist = jsonResult.result.data;
+			return Newslist;
+		}
+		return null;
 		
-		return Newslist;
 	}
 	
 	public ArrayList<News> getNewsist(){

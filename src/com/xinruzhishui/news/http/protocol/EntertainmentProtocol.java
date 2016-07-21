@@ -20,6 +20,10 @@ public class EntertainmentProtocol extends BaseProtocol<ArrayList<News>>{
 	public ArrayList<News> parseJson(String result) {
 		Gson gson = new Gson();
 		JsonResult jsonResult = gson.fromJson(result, JsonResult.class);
+		if(jsonResult  == null){
+			return null;
+			
+		}
 		Newslist = jsonResult.result.data;
 		
 		return Newslist;

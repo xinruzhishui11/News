@@ -26,6 +26,8 @@ import com.xinruzhishui.news.utils.StringUtils;
 public class HttpHelper {
 
 	public static final String URL = "http://v.juhe.cn/toutiao/index?type=";
+	public static final String PICURL = "http://gank.io/api/data/%E7%A6%8F%E5%88%A9/";
+	
 
 	/** get请求，获取返回字符串内容 */
 	public static HttpResult get(String url) {

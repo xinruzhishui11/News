@@ -4,6 +4,8 @@
     <string name="app_name">News</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 
     <string-array name="tab_names">
         <item>头条</item>
@@ -17,7 +19,12 @@
         <item>财经</item>
         <item>时尚</item>
     </string-array>
+    <string-array name="menu_array">
+        <item>新闻</item>
+        <item>图片</item>
+    </string-array>
 
     <string name="title_activity_web_view_activity">WebViewActivityActivity</string>
+    <string name="title_activity_picture">PictureActivity</string>
 
 </resources>

@@ -19,5 +19,7 @@
     <color name="menu_bg_normal">#f0f1f3</color>
     <color name="menu_bg_press">#cecece</color>
     
+    <color name="bt_bg_menu">#33257DC2</color>
+    
 
 </resources>

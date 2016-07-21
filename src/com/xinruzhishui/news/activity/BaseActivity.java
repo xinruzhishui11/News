@@ -1,5 +1,9 @@
 package com.xinruzhishui.news.activity;
 
+import java.util.ArrayList;
+
+import com.xinruzhishui.news.ui.LoadingPage.ResultState;
+
 import android.support.v7.app.ActionBarActivity;
 /**
  * android-support-v7-appcompat
@@ -15,4 +19,21 @@ import android.support.v7.app.ActionBarActivity;
  */
 public class BaseActivity extends ActionBarActivity {
 
+	
+	// 对网络返回数据的合法性进行校验
+		public ResultState check(Object obj) {
+			if (obj != null) {
+				if (obj instanceof ArrayList) {// 判断是否是集合
+					ArrayList list = (ArrayList) obj;
+
+					if (list.isEmpty()) {
+						return ResultState.STATE_EMPTY;
+					} else {
+						return ResultState.STATE_SUCCESS;
+					}
+				}
+			}
+
+			return ResultState.STATE_ERROR;
+		}
 }
